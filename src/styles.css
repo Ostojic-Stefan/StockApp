@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.125rem;
+    font-family: system-ui;
+    line-height: 1.5;
+    color: #333;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    background-color: #f4f4f4;
+    border-collapse: collapse;
+
+    box-shadow: 5px 5px 8px #a6a6a6;
+    margin-bottom: 24px;
+}
+
+th, td {
+    padding: 1rem;
+}
+
+th {
+    text-align: left;
+    background-color: #2a2a2a;
+    color: #eee;
+}
+
+tr:nth-of-type(2n) {
+    background-color: #e0e0e0;
+}
+
+tr {
+    transition: .3s all;
+}
+
+tr:hover {
+    background-color: rgb(86, 86, 86);
+    color: #eee;
+    cursor: default;
+}
+
+.pair-name {
+    color: #ff7746;
+    font-weight: 700;
+}
+
+.symbol-name:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    padding: 20px 20px;
+    box-shadow: 4px 4px 16px #bcbcbc;
+    display: flex;
+    justify-content: space-between;
+
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.header-left {
+    display: flex;
+    gap: 16px;
+}
+
+
+/* MISC */
+a:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: #eee !important;
+    background-color: #2a2a2a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+
+    transition: .1s background-color
+}
+
+.btn-primary:hover {
+    background-color: #373737;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    color: #333 !important;
+    font-weight: 700;
+    background-color: #53e0e0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+
+    transition: .1s background-color
+}
+
+.btn-secondary:hover {
+    background-color: #00ffff;
+    cursor: pointer;
+}
+
+.btn-tertiary {
+    color: #333 !important;
+    font-weight: 700;
+    background-color: #ff4a18;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+
+    transition: .1s background-color
+}
+
+.btn-tertiary:hover {
+    background-color: #ff795b;
+    cursor: pointer;
+}
